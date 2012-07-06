@@ -1,0 +1,641 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\KeckWars.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\KeckWars.ico"
+IDI_KECK                ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_MULTIPLAYER         BITMAP  DISCARDABLE     "res\\MultiScreen.bmp"
+IDB_SINGLEPLAYER        BITMAP  DISCARDABLE     "res\\SinglePlayerScreen.bmp"
+IDB_SERVERREADY         BITMAP  DISCARDABLE     "res\\ServerScreen.bmp"
+IDB_CLIENT              BITMAP  DISCARDABLE     "res\\ClientScreen.bmp"
+IDB_START               BITMAP  DISCARDABLE     "res\\KickAss.bmp"
+IDB_INTRO2              BITMAP  DISCARDABLE     "res\\Start1.bmp"
+IDB_INTRO3              BITMAP  DISCARDABLE     "res\\Start2.bmp"
+IDB_SETUPMENUCONFIGURATIONDIALOG BITMAP  DISCARDABLE     "res\\SetupMenuConfiguration.bmp"
+IDB_EXIT                BITMAP  DISCARDABLE     "res\\ExitScreen.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About KeckWars...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SINGLEPLAYER DIALOGEX 0, 0, 186, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Keck Wars"
+FONT 18, "JuliusBlack", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Go",IDSINGLEGO,152,146,30,13,0,WS_EX_TRANSPARENT
+    CONTROL         "Mission 1",IDC_MISSION1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFT | BS_VCENTER | BS_FLAT | WS_TABSTOP,9,41,43,13,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Mission 2",IDC_MISSION2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_TABSTOP,9,61,43,13,WS_EX_DLGMODALFRAME | 
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         "Mission 3",IDC_MISSION3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_TABSTOP,9,81,43,13,WS_EX_DLGMODALFRAME | 
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         "Define",IDC_USERDEFINED,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_TABSTOP,13,109,33,14,WS_EX_DLGMODALFRAME | 
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Load",IDC_LOAD,148,111,26,11,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Back",IDSINGLEBACK,3,146,30,13,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_USERFILE,61,110,75,12,ES_AUTOHSCROLL,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,3,102,179,26,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_MISSIONCHOICE,61,37,94,61,ES_MULTILINE | WS_VSCROLL,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         198,IDC_STATIC,"Static",SS_BITMAP,0,0,188,181
+END
+
+IDD_SETUPMENUCONFIGURATION_DIALOG DIALOGEX 0, 0, 144, 124
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_APPWINDOW
+CAPTION "Keck Wars"
+FONT 24, "JuliusBlack", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Single Player",IDSINGLEPLAYER,20,81,48,17,0,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "Multi Player",IDMULTIPLAYER,75,81,48,17,0,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "Exit",IDC_EXIT,61,106,21,14,0,WS_EX_TRANSPARENT
+    CONTROL         205,IDC_STATIC,"Static",SS_BITMAP,0,0,155,146
+END
+
+IDD_MULTIPLAYER DIALOGEX 0, 0, 167, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Keck Wars"
+FONT 20, "JuliusBlack", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "CLIENT",IDCLIENT,65,79,36,22,0,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "SERVER",IDSERVER,65,42,36,22,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "BACK",IDC_MULTIBACK,3,128,27,11,0,WS_EX_TRANSPARENT
+    CONTROL         178,IDC_STATIC,"Static",SS_BITMAP,1,0,166,149
+END
+
+IDD_SERVERREADY DIALOGEX 0, 0, 186, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Keck Wars"
+FONT 18, "JuliusBlack", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Go",IDSERVERREADYGO,152,146,30,13,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_P1NAME,4,38,38,12,ES_AUTOHSCROLL,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    COMBOBOX        IDC_P2TYPE,43,65,48,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    COMBOBOX        IDC_P3TYPE,43,91,48,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    COMBOBOX        IDC_P4TYPE,43,118,48,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    COMBOBOX        IDC_P5TYPE,135,38,48,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    COMBOBOX        IDC_P6TYPE,135,65,48,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_P7TYPE,135,91,48,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    COMBOBOX        IDC_P8TYPE,135,118,48,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_P2NAME,4,64,38,12,ES_AUTOHSCROLL,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    EDITTEXT        IDC_P3NAME,4,90,38,12,ES_AUTOHSCROLL,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_P4NAME,4,117,38,12,ES_AUTOHSCROLL,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_P5NAME,96,37,38,12,ES_AUTOHSCROLL,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_P6NAME,96,64,38,12,ES_AUTOHSCROLL,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_P7NAME,96,90,38,12,ES_AUTOHSCROLL,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_P8NAME,96,117,38,12,ES_AUTOHSCROLL,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Back",IDSERVERREADYBACK,3,146,30,13,0,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,2,29,90,25,BS_FLAT,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,2,81,90,25,BS_FLAT,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,94,55,90,25,BS_FLAT,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,94,81,90,25,BS_FLAT,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,94,107,90,25,BS_FLAT,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,2,107,90,25,BS_FLAT,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,94,29,90,25,BS_FLAT,WS_EX_TRANSPARENT
+    LTEXT           "    SERVER",IDC_P1TYPE,43,38,48,12,0,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC,2,55,90,25,BS_FLAT,WS_EX_TRANSPARENT
+    CONTROL         164,IDC_STATIC,"Static",SS_BITMAP,0,0,188,173
+END
+
+IDD_CLIENT DIALOGEX 0, 0, 186, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Keck Wars"
+FONT 18, "JuliusBlack", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Go",IDCLIENTGO,152,145,30,13,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SCREENNAME,96,60,73,12,ES_AUTOHSCROLL,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SERVERNAME,87,113,89,12,ES_AUTOHSCROLL,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "Back",IDCLIENTBACK,4,145,30,13,0,WS_EX_TRANSPARENT
+    CONTROL         143,IDC_STATIC,"Static",SS_BITMAP,0,0,190,171
+END
+
+IDD_EXIT DIALOGEX 0, 0, 144, 124
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Keck Wars"
+FONT 24, "JuliusBlack", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Exit",IDC_SKIP,125,113,17,8,0,WS_EX_TRANSPARENT
+    CONTROL         211,IDC_STATIC,"Static",SS_BITMAP,0,0,155,146
+END
+
+IDD_START DIALOGEX 0, 0, 143, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Keck Wars"
+FONT 24, "JuliusBlack", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "SKip",IDSKIP,1,113,16,7,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Next",IDC_STARTNEXT,61,111,19,9,0,WS_EX_TRANSPARENT
+    CONTROL         228,IDC_STATIC,"Static",SS_BITMAP,0,0,145,125
+END
+
+IDD_INTRO2 DIALOGEX 0, 0, 140, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Keck Wars"
+FONT 24, "JuliusBlack", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Next",IDC_INTRO2NEXT,61,111,19,9,0,WS_EX_TRANSPARENT
+    CONTROL         235,IDC_STATIC,"Static",SS_BITMAP,0,0,147,133
+END
+
+IDD_INTRO3 DIALOGEX 0, 0, 139, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Keck Wars"
+FONT 24, "JuliusBlack", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Next",IDC_INTRO3NEXT,61,111,19,9,0,WS_EX_TRANSPARENT
+    CONTROL         240,IDC_STATIC,"Static",SS_BITMAP,0,0,147,133
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "KeckWars MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "KeckWars\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "KeckWars.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "KeckWars Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SINGLEPLAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_SETUPMENUCONFIGURATION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_MULTIPLAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_SERVERREADY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_CLIENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_EXIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_START, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_INTRO2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_INTRO3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SERVERREADY DLGINIT
+BEGIN
+    IDC_P2TYPE, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_P2TYPE, 0x403, 7, 0
+0x6c43, 0x736f, 0x6465, "\000" 
+    IDC_P2TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0031, 
+    IDC_P2TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0032, 
+    IDC_P2TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0033, 
+    IDC_P3TYPE, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_P3TYPE, 0x403, 7, 0
+0x6c43, 0x736f, 0x6465, "\000" 
+    IDC_P3TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0031, 
+    IDC_P3TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0032, 
+    IDC_P3TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0033, 
+    IDC_P4TYPE, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_P4TYPE, 0x403, 7, 0
+0x6c43, 0x736f, 0x6465, "\000" 
+    IDC_P4TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0031, 
+    IDC_P4TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0032, 
+    IDC_P4TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0033, 
+    IDC_P5TYPE, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_P5TYPE, 0x403, 7, 0
+0x6c43, 0x736f, 0x6465, "\000" 
+    IDC_P5TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0031, 
+    IDC_P5TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0032, 
+    IDC_P5TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0033, 
+    IDC_P6TYPE, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_P6TYPE, 0x403, 7, 0
+0x6c43, 0x736f, 0x6465, "\000" 
+    IDC_P6TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0031, 
+    IDC_P6TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0032, 
+    IDC_P6TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0033, 
+    IDC_P7TYPE, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_P7TYPE, 0x403, 7, 0
+0x6c43, 0x736f, 0x6465, "\000" 
+    IDC_P7TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0031, 
+    IDC_P7TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0032, 
+    IDC_P7TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0033, 
+    IDC_P8TYPE, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_P8TYPE, 0x403, 7, 0
+0x6c43, 0x736f, 0x6465, "\000" 
+    IDC_P8TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0031, 
+    IDC_P8TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0032, 
+    IDC_P8TYPE, 0x403, 14, 0
+0x7645, 0x6c69, 0x4520, 0x706d, 0x7269, 0x2065, 0x0033, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "KeckWars"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "KeckWars"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\KeckWars.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,18 @@
+Keck Wars v1.0
+CMSI 401
+Loyola Marymount University
+9 Dec 1999
+
+\bin		Contains the executable KeckWars.exe
+\doc		Contains final project documentation
+\src		Contains the latest version of the Keck Wars
+		source code, with MS Visual Studio workspace
+\SourceSafeDB	The source safe database from the project.  
+		Use username "guest" with password "guest" 
+		to logon.  The folder "_KeckWarsIntegrated"
+		is the full version.
+
+To run Keck Wars, you first need to install a couple fonts.
+Drag the "Borg9.ttf" and "Julsblk.ttf" font files into your
+winnt\fonts or windows\fonts directory.  Now the game is 
+ready to play.  Enjoy!
